@@ -21,7 +21,7 @@ public class Clients_steps {
 	@Given("I am on actiTime home page")
 	public void i_am_on_actiTime_home_page() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:/Users/melfi/Desktop/Selenium drivers/chromedriver_win32_new/chromedriver.exe/");
+				System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://www.actitime.com");
