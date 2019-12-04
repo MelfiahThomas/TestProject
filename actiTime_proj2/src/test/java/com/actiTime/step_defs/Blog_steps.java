@@ -20,7 +20,7 @@ public class Blog_steps {
 	@Given("Iam on the actiTime home page")
 	public void iam_on_the_actiTime_home_page() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:/Users/melfi/Desktop/Selenium drivers/chromedriver_win32/chromedriver.exe/");
+				System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://www.actitime.com");
